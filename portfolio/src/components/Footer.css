@@ -1,0 +1,43 @@
+.footer p{
+  font-size:22px;
+  font-weight: 500px;
+}
+.footer span{
+  background: linear-gradient(90deg, #DA7C25, #B923E1); /* Gradient colors */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* Standard */
+  color: transparent; /* Hide the default text color */
+  
+}
+.footer-container{
+  margin:70px 40px
+}
+.footer-details{
+  gap:30px;
+  color:beige;
+  font-size: 22px;;
+}
+
+.footer-detail{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+@media(max-width:768px){
+  .footer-container{
+    margin:50px 20px;
+  }
+  .footer p{
+    text-align: center;
+    font-size:18px;
+  }
+  .footer-details{
+    gap:15px;
+    font-size: 16px;
+  }
+  .footer-detail{
+    gap:5px;
+    font-size: 14px;
+  }
+}

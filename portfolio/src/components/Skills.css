@@ -1,0 +1,85 @@
+.coding-skills{
+  margin:70px 40px;
+
+}
+.coding-links{
+  gap:30px;
+  color:beige;
+  font-size: 22px;;
+}
+.coding-para{
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+
+.coding-link{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+.about-Achievements{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.about-achievement{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  transition:0.5s;
+}
+.about-achievement h1{
+  background: linear-gradient(90deg, #DA7C25, #B923E1); /* Gradient colors 
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* Standard */
+  color: transparent; /* Hide the default text color */
+  font-size: 40px; /* Adjust font size as needed */
+}
+.about-achievement p{
+  font-size: 22px;
+  font-weight:500;
+}
+.about-achievement:hover, .about-skill:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:768px){
+  .coding-skills{
+    margin:50px 20px;
+  }
+  .about-Achievements{
+    justify-content: space-between;
+    margin:50px 20px;
+
+  }
+  .about-achievement{
+    align-items: center;
+    gap: 10px
+  }
+  .about-achievement h1{
+    font-size: 30px;
+    font-weight: 700px;
+  }
+  .about-achievement p{
+    text-align: center;
+    font-size:16px;
+  }
+  .symbol{
+    object-fit: cover;
+  }
+  .coding-para{
+    margin-top: 0;
+    font-size: 18px;
+  }
+  .coding-links{
+    gap:10px;
+  }
+  .coding-link{
+    font-size:16px;
+    gap:10px
+  }
+
+}

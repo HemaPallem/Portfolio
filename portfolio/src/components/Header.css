@@ -1,0 +1,88 @@
+/*Header component*/
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+.nav-bar{
+  margin:20px 40px
+}
+.anchor-link{
+  color:white;
+  padding-bottom: 5px;
+  border:none;
+  text-decoration:none;
+  padding: 7px;
+  border-radius:4px;
+  margin-right: 15px;
+
+}
+.anchor-link:hover{
+  border-bottom:2px solid #DA7C25;
+  box-shadow: 0px 4px 8px white;
+  color:white;
+}
+.connect-with-me{
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  border-radius: 30px;
+  padding:10px;
+  cursor:pointer;
+  transition: 0.5s;
+  font-size:18px;
+}
+.connect-link{
+  text-decoration: none;
+  color:white;
+
+}
+.connect-with-me:hover{
+  transform: scale(1.05);
+}
+
+.nav-mob-close{
+  display:none;
+}
+.nav-mob-open{
+  display:none;
+}
+@media(max-width:768px){
+  .nav-bar{
+    margin:20px 50px;
+  }
+  .connect-with-me{
+    display: none;
+  }
+  .nav-mob-open{
+    display: block;
+    position:fixed;
+    right: 30px
+  }
+  .nav-mob-close{
+    display:block;
+    position:relative;
+    top:30px;
+    left:250px;
+    width:30px;
+  }
+  .nav{
+    position:fixed;
+    flex-direction: column;
+    align-items: start;
+    top:0;
+    gap:30px;
+    width: 300px;
+    height: 100%;
+    background-color:#1F0016;
+    z-index: 2;
+    transition: right 0.5s;
+    right:-350px;
+
+  }
+  .nav li{
+    font-size: 30px;
+    padding-left:50px;
+    flex-direction: row;
+    gap:20px;
+  }
+}

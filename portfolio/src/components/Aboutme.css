@@ -1,0 +1,78 @@
+/* Aboutme component */
+.about{
+  margin:70px 40px;
+}
+.about-title h1{
+  text-align: center;
+  font-size:50px;
+}
+.about-profile{
+  width:400px;
+  height: 500px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right:40px
+}
+
+.about-skills{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.about-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust the gap between text and the line */
+}
+
+.about-para{
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.about-skill p {
+  display: flex;
+  align-items: center;
+  gap:20px;
+  min-width: 150px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.about-skill hr{
+  outline:none;
+  border:none;
+  width:50%;
+  height:8px;
+  border-radius:50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  transition:0.3s;
+}
+
+@media(max-width:768px){
+  .about{
+    margin: 50px 20px;
+  }
+  .about-sections{
+    flex-direction: column;
+  }
+  .about-right{
+    display:none;
+  }
+  .about-para{
+    font-size:18px;
+    line-height:32px;
+  }
+  .about-skills{
+    gap:5px;
+  }
+  .about-skill p{
+    font-size:18px;
+  }
+  .about-skill hr{
+    height:6px;
+  }
+}
