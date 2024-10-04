@@ -8,6 +8,13 @@ const Contact = () => {
   const[alertVisible, setAlertVisible]=useState(false)
   const onSubmit = async (event) => {
     event.preventDefault();
+    const name = document.getElementById("name");
+    const email = document.getElemnetById("email");
+    const msg = document.getElementById("msg");
+    if (!name || !email || !msg){
+      alert("Please enter all  details");
+      return;
+    }
     const formData = new FormData(event.target);
 
     formData.append("access_key", "cc24eac3-b648-41b2-86bd-963f46481bd7");
@@ -56,11 +63,11 @@ const Contact = () => {
         <form className="contact-right d-flex flex-column flex-start" onSubmit={onSubmit}>
           <h1 className="contact-title">Contact Form</h1>
           <label htmlFor="name">Your Name</label>
-          <input type="text" placeholder="Enter your Name" id="name"/>
+          <input type="text" placeholder="Enter your Name" id="name" required/>
           <label htmlFor="email">Your Mail</label>
-          <input type="email" placeholder="Enter your email address" id="email" />
+          <input type="email" placeholder="Enter your email address" id="email" required/>
           <label htmlFor="msg">Write Your Message</label>
-          <textarea name="msg" id="msg" rows="8" placeholder="Enter your message"></textarea>
+          <textarea name="msg" id="msg" rows="8" placeholder="Enter your message" required></textarea>
           <button type="submit" className="form-submit">submit</button>
           <div className={`alert alert-success alert-dismissible fade  ${alertVisible?"show":"d-none"}`} role="alert">
             <strong>Mail sent successfully!</strong> 
